@@ -3,7 +3,13 @@ const routes = [
         method: 'GET',
         path: '/',
         handler: (request, h) => {
-            return 'Homepage';
+            const response = h.response({
+                message: "Homepage"
+            });
+            response.code(200)
+            response.type('application/json');
+            response.header('X-Custom', 'some-value');
+            return response;
         },
     },
     {
