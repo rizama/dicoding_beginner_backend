@@ -2,14 +2,26 @@
   "name": "dicoding_beginner_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
+  "dependencies": {
+    "@hapi/hapi": "^20.1.2",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizama/dicoding_beginner_backend.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  }
+  "bugs": {
+    "url": "https://github.com/rizama/dicoding_beginner_backend/issues"
+  },
+  "homepage": "https://github.com/rizama/dicoding_beginner_backend#readme"
 }
